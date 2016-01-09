@@ -1,0 +1,14 @@
+#brands-section {
+  background-color: #ebebeb;
+  padding: 40px 0;
+  .title{
+    @include font-face(36px, black);
+    font-family: "SegoeUI-SemiBold";
+    margin-bottom: 20px;
+  }
+}
+#owl-brand{
+  .item{
+    margin: 20px 60px;
+  }
+}

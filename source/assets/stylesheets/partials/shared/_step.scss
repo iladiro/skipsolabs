@@ -1,0 +1,15 @@
+.step{
+  &__icon{
+    @include font-face(50px, $main-color);
+  }
+  &__title{
+    @include font-face(30px, $main-color);
+    font-weight: bold;
+  }
+  &__subtitle{
+    @include font-face(21px, $main-color);
+  }
+  &__description{
+    @include font-face(14px, black);
+  }
+}

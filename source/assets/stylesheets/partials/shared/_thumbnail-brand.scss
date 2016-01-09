@@ -1,0 +1,14 @@
+.thumb-brand{
+  border-radius: 0;
+  padding-top: 10px;
+  @include solid-border(1px, #cccccc);
+  background-color: white;
+  &__title{
+    @include font-face(18px, $main-color);
+    font-family: "SegoeUI-SemiBold";
+  }
+  &__description{
+    @include font-face(14px, black);
+    font-family: "SegoeUI-SemiBold";
+  }
+}

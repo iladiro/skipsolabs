@@ -1,0 +1,15 @@
+.fact{
+  &__title{
+    @include font-face(65px, white);
+    @include respond-to(max-width, 768px) {
+      font-size: 30px;
+    }
+  }
+  &__text{
+    @include font-face(25px, white);
+    font-family: "SegoeUI-Light";
+    @include respond-to(max-width, 768px) {
+      font-size: 15px;
+    }
+  }
+}
