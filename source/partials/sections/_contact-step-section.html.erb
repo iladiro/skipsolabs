@@ -1,0 +1,61 @@
+<section id="contact-steps">
+  <div class="container">
+    <p class="text-center text">Unisciti a StartUp4You, crea il profilo della tua startup e trova<br>
+    opportunità per far crescere il tuo business.</p>
+    <div class="col-md-3 col-sm-6">
+      <%= partial('partials/shared/step',
+          locals: {
+            icon: 'ico_book',
+            title: '1.',
+            subtitle: 'REGISTRATI',
+            description: 'Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.'
+          }
+        )
+      %>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <%= partial('partials/shared/step',
+          locals: {
+            icon: 'ico_connect',
+            title: '2.',
+            subtitle: 'CREA PROFILO STARTUP',
+            description: 'Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.'
+          }
+        )
+      %>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <%= partial('partials/shared/step',
+          locals: {
+            icon: 'ico_mail',
+            title: '3.',
+            subtitle: 'RICEVI RICHIESTE DI CONTATTO',
+            description: 'Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.'
+          }
+        )
+      %>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <%= partial('partials/shared/step',
+          locals: {
+            icon: 'ico_phone',
+            title: '4.',
+            subtitle: 'PARTECIPA A OPEN CALL',
+            description: 'Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.'
+          }
+        )
+      %>
+    </div>
+    <div class="text-center col-xs-12">
+      <%= partial('partials/shared/btn',
+          locals: {
+            link: '#',
+            classes: 'text-uppercase btn-shared btn-shared--blue btn-lg',
+            text_link: 'TROVA OPPORTUNITà',
+            icon: 'fa fa-angle-right'
+          }
+        )
+      %>
+    </div>
+  </div>
+</section>
