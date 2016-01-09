@@ -1,0 +1,25 @@
+.badge-advertising{
+  @include size(200px, 200px);
+  border-radius: 200px;
+  background-color: #bbbbbb;
+  @include solid-border(10px, #ffffff);
+  &__title{
+    font-weight: 300;
+    font-family: "SegoeUI-Light";
+    .highlighted{
+      font-size: 30px;
+      font-family: "SegoeUI-SemiBold";
+    }
+  }
+  &__link{
+    padding: 7px 10px;
+    border-radius: 0;
+    border: none;
+    color: #bbbbbb;
+    background: white;
+    &:hover{
+      color: black;
+      @include transition(color 0.3s ease-out);
+    }
+  }
+}

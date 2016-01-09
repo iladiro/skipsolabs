@@ -1,0 +1,9 @@
+#slide {
+  min-height: 570px;
+  .badge-advertising {
+    @include position(right, 0, top, 15px);
+  }
+  .slogan{
+    margin-top: 210px;
+  }
+}

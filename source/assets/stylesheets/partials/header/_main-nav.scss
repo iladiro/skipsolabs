@@ -1,0 +1,6 @@
+.main-nav{
+  padding-right: 75px;
+  .main-nav__link{
+    @extend %nav;
+  }
+}

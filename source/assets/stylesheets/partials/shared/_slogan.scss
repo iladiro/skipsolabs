@@ -1,0 +1,11 @@
+.slogan {
+  &__title {
+    @include font-face(80px, white);
+    @include respond-to(max-width, 768px) {
+      font-size: 40px;
+    }
+  }
+  &__description {
+    @include font-face(21px, white);
+  }
+}
