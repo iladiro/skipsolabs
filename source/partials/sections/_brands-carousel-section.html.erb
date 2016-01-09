@@ -1,0 +1,23 @@
+<section id="brands-section">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center title">Recently Joined</h2>
+      <div class="blocks-carousel">
+        <div id="owl-brand">
+          <% data.brands.recents.each do |brand| %>
+            <div class="item">
+              <%= partial('partials/shared/thumbnail-brand',
+                  locals: {
+                    image: brand.image,
+                    title: brand.title,
+                    description: brand.description
+                  }
+                )
+              %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
