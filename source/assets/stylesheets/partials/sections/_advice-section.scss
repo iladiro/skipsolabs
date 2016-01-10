@@ -1,0 +1,15 @@
+.content-section{
+  &__title{
+    @include font-face(30px, black);
+    font-family: "SegoeUI-SemiBold";
+    margin-bottom: 30px;
+  }
+  &__link{
+    @include font-face(18px, $main-color);
+    font-family: "SegoeUI-SemiBold";
+    @include transition(all 0.3s ease-out);
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

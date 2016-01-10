@@ -1,6 +1,5 @@
 #brands-section {
   background-color: #ebebeb;
-  padding: 40px 0;
   .title{
     @include font-face(36px, black);
     font-family: "SegoeUI-SemiBold";
@@ -10,5 +9,46 @@
 #owl-brand{
   .item{
     margin: 20px 60px;
+    @include respond-to(max-width, 1069px) {
+      margin: 20px 10px;
+    }
+  }
+  &.owl-theme{
+    .owl-controls{
+      .owl-pagination{
+        @include respond-to(min-width, 1070px) {
+          display: none;
+        }
+      }
+      .owl-buttons{
+        @include respond-to(max-width, 1069px) {
+          display: none;
+        }
+        .owl-prev{
+          left: -45px;
+          top: 50%;
+          margin-top: -27px;
+        }
+        .owl-next{
+          right: -45px;
+          top: 50%;
+          margin-top: -27px;
+        }
+        div{
+          padding: 10px 15px;
+          position: absolute;
+          border-radius: 0;
+          background-color: $main-color;
+          @include opacity(1);
+          @include transition(all 0.3s ease-out);
+          &:hover{
+            @include opacity(0.8);
+          }
+        }
+        // i{
+        //   margin-top: 2px;
+        // }
+      }
+    }
   }
 }

@@ -1,0 +1,50 @@
+.thumb-new{
+  border: none;
+  padding: 0;
+  @include respond-to(max-width, 768px) {
+    margin-bottom: 40px;
+  }
+  .caption{
+    padding: 0;
+  }
+  &__title{
+    @include font-face(18px, $main-color);
+    font-family: "SegoeUI-SemiBold";
+  }
+  &__subtitle{
+    @include font-face(14px, $main-color);
+  }
+  &__description{
+    @include font-face(15px, black);
+    font-family: "SegoeUI-Light";
+  }
+  &__image{
+    position: relative;
+    @include spaces(0, 0 0 30px 0);
+    display: block;
+    overflow: hidden;
+    outline: none;
+    .hover-mask{
+      @include position(left, 0, top, 0);
+      @include size(100%, 100%);
+      background: $main-color;
+      @include opacity(0);
+      @include transition(all 0.3s ease-out);
+      &:hover{
+        &{
+          @include opacity(0.9);
+          padding-top: 10%;
+        }
+      }
+      &__icon{
+        margin-bottom: 15px;
+        i{
+          @include font-face(30px, white);
+        }
+      }
+      &__link-text{
+        @include font-face(12px, white);
+      }
+    }
+  }
+}

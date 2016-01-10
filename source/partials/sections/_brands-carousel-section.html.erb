@@ -1,11 +1,11 @@
-<section id="brands-section">
+<section id="brands-section" class="section-padding">
   <div class="container">
     <div class="row">
       <h2 class="text-center title">Recently Joined</h2>
       <div class="blocks-carousel">
         <div id="owl-brand">
           <% data.brands.recents.each do |brand| %>
-            <div class="item">
+            <article class="item">
               <%= partial('partials/shared/thumbnail-brand',
                   locals: {
                     image: brand.image,
@@ -14,7 +14,7 @@
                   }
                 )
               %>
-            </div>
+            </article>
           <% end %>
         </div>
       </div>

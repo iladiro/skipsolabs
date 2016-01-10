@@ -1,8 +1,19 @@
 .lang{
   .lang__item{
     padding: 15px 8px;
+    @include respond-to(max-width, 995px) {
+      padding: 10px 5px;
+    }
     &:hover{
       background: transparent;
+    }
+  }
+  @include respond-to(max-width, 768px) {
+    text-align: center;
+  }
+  & > li{
+    @include respond-to(max-width, 768px) {
+      float: left;
     }
   }
 }

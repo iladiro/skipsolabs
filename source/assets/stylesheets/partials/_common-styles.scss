@@ -10,3 +10,17 @@ body{
 .relative{
   position: relative;
 }
+
+strong{
+  font-family: "SegoeUI-SemiBold";
+}
+
+.section-padding{
+  padding: 40px 0;
+}
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,19 @@
+<div class="tweet">
+  <div class="tweet__icon">
+    <%= image_tag 'icons/ico_twitter.png' %>
+  </div>
+  <div class="tweet__content">
+    <div class="tweet__user-info">
+      <a href="<%= link %>">
+        <strong class="tweet__fullname"><%= fullname %></strong>
+        <span class="tweet__username">@<%= username %></span>
+      </a>
+    </div>
+    <p class="tweet__comment">
+      <%= comment %>
+    </p>
+    <time class="tweet__time">
+      <%= time %> ago
+    </time>
+  </div>
+</div>

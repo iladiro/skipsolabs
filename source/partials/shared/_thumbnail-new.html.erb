@@ -1,0 +1,28 @@
+<div class="thumbnail thumb-new">
+  <a href="<%= link %>" class="thumb-new__image">
+    <%= image_tag image, class: 'img-responsive' %>
+    <div class="hover-mask text-center">
+      <div class="hover-mask__container">
+        <div class="hover-mask__icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <p class="hover-mask__link-text text-uppercase">
+          <%= link_text %>
+        </p>
+      </div>
+    </div>
+  </a>
+  <div class="caption">
+    <header>
+      <h3 class="thumb-new__title text-uppercase">
+        <%= title %>
+      </h3>
+      <h5 class="thumb-new__subtitle text-uppercase">
+        <%= subtitle %>
+      </h5>
+    </header>
+    <p class="thumb-new__description">
+      <%= description %>
+    </p>
+  </div>
+</div>

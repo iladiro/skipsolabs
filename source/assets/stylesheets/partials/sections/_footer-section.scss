@@ -1,0 +1,42 @@
+footer{
+  $main-color: #5ebbb6;
+  background: #393830;
+  .box-talentyon{
+    &__logo{
+      border-right: 1px solid $main-color;
+      padding-right: 10px;
+      @include respond-to(max-width, 768px) {
+        border-right: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+      @include respond-to(min-width, 769px) {
+        float: left;
+      }
+    }
+    &__text{
+      @include font-face(17px, white);
+      font-family: "SegoeUI-Light";
+      padding-left: 10px;
+      @include respond-to(max-width, 768px) {
+        padding-left: 0;
+        text-align: center;
+      }
+      @include respond-to(min-width, 769px) {
+        float: left;
+      }
+    }
+    @at-root #{&}__contacts{
+      text-align: right;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      a{
+        color: $main-color;
+      }
+      @include font-face(16px, white);
+      @include respond-to(max-width, 768px) {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}

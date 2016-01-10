@@ -3,4 +3,5 @@
 //= require vendor/scroll-smooth
 //= require vendor/jquery.backstretch.min
 //= require vendor/owl.carousel.min
+//= require brands-carousel
 //= require main

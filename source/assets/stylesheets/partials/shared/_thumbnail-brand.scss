@@ -7,6 +7,13 @@
     @include font-face(18px, $main-color);
     font-family: "SegoeUI-SemiBold";
   }
+  &__image{
+    border-bottom: 1px dotted #cccccc;
+    margin: 0 10px;
+    img{
+      padding-bottom: 10px;
+    }
+  }
   &__description{
     @include font-face(14px, black);
     font-family: "SegoeUI-SemiBold";

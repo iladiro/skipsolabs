@@ -1,31 +1,15 @@
-<section id="facts">
+<section id="facts" class="section-padding">
   <div class="container">
-    <div class="col-xs-4">
-      <%= partial('partials/shared/fact',
-          locals: {
-            title: '1550+',
-            text: 'Startup'
-          }
-        )
-      %>
-    </div>
-    <div class="col-xs-4">
-      <%= partial('partials/shared/fact',
-          locals: {
-            title: '40+',
-            text: 'Partners'
-          }
-        )
-      %>
-    </div>
-    <div class="col-xs-4">
-      <%= partial('partials/shared/fact',
-          locals: {
-            title: '100+',
-            text: 'Aziende'
-          }
-        )
-      %>
-    </div>
+    <% data.facts.items.each do |fact| %>
+      <div class="col-xs-4">
+        <%= partial('partials/shared/fact',
+            locals: {
+              title: fact.title,
+              text: fact.text
+            }
+          )
+        %>
+      </div>
+    <% end %>
   </div>
 </section>
