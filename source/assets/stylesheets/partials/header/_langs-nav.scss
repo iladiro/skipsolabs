@@ -2,7 +2,7 @@
   .lang__item{
     padding: 15px 8px;
     @include respond-to(max-width, 995px) {
-      padding: 10px 5px;
+      padding: 15px 5px;
     }
     &:hover{
       background: transparent;

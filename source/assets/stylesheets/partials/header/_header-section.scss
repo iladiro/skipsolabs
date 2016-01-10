@@ -1,3 +1,8 @@
 #main_header{
   @include spaces(20px 0, 0);
+  .container{
+    @include respond-to(min-width, 768px) {
+      padding: 0;
+    }
+  }
 }
