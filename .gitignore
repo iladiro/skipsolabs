@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore the build directory
-/build
+#/build
 /source/assets/artworks
 
 # Ignore cache

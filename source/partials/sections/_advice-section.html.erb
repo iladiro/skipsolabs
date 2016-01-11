@@ -1,51 +1,53 @@
 <section id="advice-section" class="section-padding">
   <div class="container">
-    <div class="col-md-9">
-      <section class="content-section">
-        <h2 class="content-section__title">News, Updates & Events</h2>
-        <div class="row">
-          <% data.news.items.each do |new| %>
-            <article class="col-md-4">
-              <%= partial('partials/shared/thumbnail-new',
+    <div class="row">
+      <div class="col-xs-12 col-sm-7 col-md-9">
+        <section class="content-section">
+          <h2 class="content-section__title">News, Updates & Events</h2>
+          <div class="row">
+            <% data.news.items.each do |new| %>
+              <article class="col-md-4">
+                <%= partial('partials/shared/thumbnail-new',
+                    locals: {
+                      image: new.image,
+                      title: new.title,
+                      subtitle: new.subtitle,
+                      description: new.description,
+                      link: nil,
+                      link_text: new.link_text
+                    }
+                  )
+                %>
+              </article>
+            <% end %>
+          </div>
+          <div class="text-center">
+            <a href="" class="content-section__link">Read More Activities</a>
+          </div>
+        </section>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-3">
+        <section class="content-section">
+          <h2 class="content-section__title">Twitter post</h2>
+          <div class="twits">
+            <% data.tweets.items.each do |tweet| %>
+              <%= partial('partials/shared/tweet',
                   locals: {
-                    image: new.image,
-                    title: new.title,
-                    subtitle: new.subtitle,
-                    description: new.description,
-                    link: nil,
-                    link_text: new.link_text
+                    link: tweet.link,
+                    fullname: tweet.fullname,
+                    username: tweet.username,
+                    comment: tweet.comment,
+                    time: tweet.time
                   }
                 )
               %>
-            </article>
-          <% end %>
-        </div>
-        <div class="text-center">
-          <a href="" class="content-section__link">Read More Activities</a>
-        </div>
-      </section>
-    </div>
-    <div class="col-md-3">
-      <section class="content-section">
-        <h2 class="content-section__title">Twitter post</h2>
-        <div class="twits">
-          <% data.tweets.items.each do |tweet| %>
-            <%= partial('partials/shared/tweet',
-                locals: {
-                  link: tweet.link,
-                  fullname: tweet.fullname,
-                  username: tweet.username,
-                  comment: tweet.comment,
-                  time: tweet.time
-                }
-              )
-            %>
-          <% end %>
-        </div>
-        <div class="text-center">
-          <a href="" class="content-section__link">More Posts</a>
-        </div>
-      </section>
+            <% end %>
+          </div>
+          <div class="text-center">
+            <a href="" class="content-section__link">More Posts</a>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </section>

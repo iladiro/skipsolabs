@@ -2,8 +2,8 @@
   <div class="container">
     <p class="text-center text">Unisciti a StartUp4You, crea il profilo della tua startup e trova<br>
     opportunità per far crescere il tuo business.</p>
-    <% data.contact_steps.steps.each do |step| %>
-      <div class="col-md-3 col-sm-6">
+    <% data.contact_steps.items.each do |step| %>
+      <div class="col-xs-12 col-sm-6 col-md-3">
         <%= partial('partials/shared/step',
             locals: {
               icon: step.icon,
