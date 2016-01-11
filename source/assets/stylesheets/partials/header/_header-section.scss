@@ -1,8 +1,17 @@
-#main_header{
+#top{
   @include spaces(20px 0, 0);
   .container{
     @include respond-to(min-width, 768px) {
       padding: 0;
+    }
+  }
+  .navbar-mobile{
+    padding: 0;
+  }
+
+  .logo{
+    @include respond-to(max-width, 767px) {
+      padding-left: 10px;
     }
   }
 }

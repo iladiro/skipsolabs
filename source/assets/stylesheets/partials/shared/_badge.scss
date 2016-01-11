@@ -3,7 +3,7 @@
   border-radius: 200px;
   background-color: #bbbbbb;
   @include solid-border(10px, #ffffff);
-  &__title{
+  &__text{
     font-weight: 300;
     font-family: "SegoeUI-Light";
     .highlighted{
@@ -16,10 +16,10 @@
     border-radius: 0;
     border: none;
     color: #bbbbbb;
+    @include transition(color 0.3s ease-out);
     background: white;
     &:hover{
       color: black;
-      @include transition(color 0.3s ease-out);
     }
   }
 }

@@ -2,7 +2,7 @@
   border: none;
   padding: 0;
   @include respond-to(max-width, 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   .caption{
     padding: 0;
@@ -10,6 +10,7 @@
   &__title{
     @include font-face(18px, $main-color);
     font-family: "SegoeUI-SemiBold";
+    margin-top: 0;
   }
   &__subtitle{
     @include font-face(14px, $main-color);
@@ -20,7 +21,7 @@
   }
   &__image{
     position: relative;
-    @include spaces(0, 0 0 30px 0);
+    @include spaces(0, 0 0 15px 0);
     display: block;
     overflow: hidden;
     outline: none;

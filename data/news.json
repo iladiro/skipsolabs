@@ -2,6 +2,7 @@
   "items": [
     {
       "image": "item_4.jpg",
+      "alt_image": "Gruppo Barilla - (Parma, Italy)",
       "title": "Aliquam tincidunt mauris eu risus",
       "subtitle": "Gruppo Barilla - (Parma, Italy)",
       "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
@@ -9,6 +10,7 @@
     },
     {
       "image": "item_5.jpg",
+      "alt_image": "Nestlè - (Torino, Italy)",
       "title": "Integer vitae libero ac risuegestas placerat.",
       "subtitle": "Nestlè - (Torino, Italy)",
       "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
@@ -16,6 +18,7 @@
     },
     {
       "image": "item_6.jpg",
+      "alt_image": "RANA - (BOLOGNA, Italy)",
       "title": "IFusce lobortis lorem at ipsum semper sagittis.",
       "subtitle": "RANA - (BOLOGNA, Italy)",
       "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",

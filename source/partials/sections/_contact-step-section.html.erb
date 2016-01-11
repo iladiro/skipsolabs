@@ -1,18 +1,21 @@
 <section id="contact-steps" class="section-padding">
+  <a id="who-link"></a>
   <div class="container">
     <p class="text-center text">Unisciti a StartUp4You, crea il profilo della tua startup e trova<br>
     opportunità per far crescere il tuo business.</p>
     <% data.contact_steps.items.each do |step| %>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <%= partial('partials/shared/step',
-            locals: {
-              icon: step.icon,
-              title: step.title,
-              subtitle: step.subtitle,
-              description: step.description
-            }
-          )
-        %>
+        <div class="wow headShake" data-wow-duration="1s" data-wow-delay="0.1s">
+          <%= partial('partials/shared/step',
+              locals: {
+                icon: step.icon,
+                title: step.title,
+                subtitle: step.subtitle,
+                description: step.description
+              }
+            )
+          %>
+        </div>
       </div>
     <% end %>
     <div class="text-center col-xs-12">
@@ -21,7 +24,7 @@
             link: '#',
             classes: 'text-uppercase btn-shared btn-shared--blue btn-lg',
             text_link: 'TROVA OPPORTUNITà',
-            icon: 'fa fa-angle-right'
+            icon: 'fa fa-chevron-right'
           }
         )
       %>

@@ -1,6 +1,13 @@
 <section id="slide">
   <div class="container relative">
-    <%= partial "partials/shared/badge" %>
+    <%= partial("partials/shared/badge",
+        locals: {
+          text: 'Non sei<br> ancora una<br> <span class="highlighted">startup?</span>',
+          link_text: 'clicca qui',
+          link: '#'
+        }
+      )
+    %>
     <%= partial("partials/shared/slogan",
         locals: {
           title: '#STARTUP4YOU',

@@ -4,37 +4,43 @@
             "id": 98,
             "title": "Kezaar",
             "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
-            "image": "kezaar.jpg"
+            "image": "kezaar.jpg",
+            "alt_image": "kezaar"
         },
         {
             "id": 124,
             "title": "Melon card",
             "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
-            "image": "melon_card.jpg"
+            "image": "melon_card.jpg",
+            "alt_image": "Melon card"
         },
         {
             "id": 131,
             "title": "Tunigo",
             "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
-            "image": "tunigo.jpg"
+            "image": "tunigo.jpg",
+            "alt_image": "Tunigo"
         },
         {
             "id": 150,
             "title": "Skipsolabs",
             "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
-            "image": "skipsolabs.jpg"
+            "image": "skipsolabs.jpg",
+            "alt_image": "Skipsolabs"
         },
         {
             "id": 151,
             "title": "Microsoft",
             "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
-            "image": "microsoft.jpg"
+            "image": "microsoft.jpg",
+            "alt_image": "Microsoft"
         },
         {
             "id": 159,
             "title": "XPrize",
             "description": "Debitist exere verum id maion porpore henis dolentiatium volum adios vell andit quunt. Et abore eos velitatusam aut quiatio enet orpor eheni...",
-            "image": "xprize.jpg"
+            "image": "xprize.jpg",
+            "alt_image": "XPrize"
         }
     ]
 }

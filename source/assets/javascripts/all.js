@@ -1,7 +1,9 @@
 //= require vendor/jquery-1.11.3.min
-//= require vendor/bootstrap.min
+//= require bootstrap
 //= require vendor/scroll-smooth
 //= require vendor/jquery.backstretch.min
 //= require vendor/owl.carousel.min
 //= require brands-carousel
+//= require vendor/wow.min
+//= require skipswow
 //= require main

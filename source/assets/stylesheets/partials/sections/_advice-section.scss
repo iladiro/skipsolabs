@@ -2,14 +2,28 @@
   &__title{
     @include font-face(30px, black);
     font-family: "SegoeUI-SemiBold";
-    margin-bottom: 30px;
+    margin: 0 0 30px;
+    @include respond-to(max-width, 768px) {
+      text-align: center;
+    }
   }
   &__link{
     @include font-face(18px, $main-color);
     font-family: "SegoeUI-SemiBold";
     @include transition(all 0.3s ease-out);
+    padding-bottom: 20px;
+    display: block;
     &:hover{
       text-decoration: none;
     }
+  }
+  &.background{
+    @include respond-to(max-width, 768px) {
+      background-color: #ebebeb;
+      @include spaces(30px 10px 10px, 0);
+    }
+  }
+  @include respond-to(max-width, 768px) {
+    margin-bottom: 20px;
   }
 }

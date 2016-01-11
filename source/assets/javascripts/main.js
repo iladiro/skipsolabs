@@ -4,4 +4,6 @@ $(document).ready(function() {
 
   new BrandsCarousel();
 
+  new SkipsWow();
+
 })
